@@ -35,6 +35,14 @@ body {
     overflow: hidden;
 }
 
+.footer {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    color: #565656;
+    font-family: monospace;
+}
+
 .picture-side {
     display: flex;
     flex-direction: row;
@@ -94,6 +102,7 @@ ul {
 a {
     text-decoration: none;
     color: var(--main);
+    color: rgb(2, 120, 81);
 }
 
 a:hover {
@@ -123,7 +132,7 @@ li.file:hover {
 
 ul.regular li {
     padding: 10px;
-    color: #124f78;
+    /* color: #124f78; */
 }
 
 ul.regular {
