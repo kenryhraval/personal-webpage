@@ -84,6 +84,7 @@ div.half {
 }
 
 
+
 ul {
     list-style-type: none;
     padding-left: 20px;
@@ -118,4 +119,13 @@ li.file:hover {
 #fileList {
     margin-top: 20px;
     font-size: 1rem;
+}
+
+ul.regular li {
+    padding: 10px;
+    color: #124f78;
+}
+
+ul.regular {
+    list-style-type: disc;
 }
