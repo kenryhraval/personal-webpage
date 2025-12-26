@@ -1,0 +1,140 @@
+:root {
+    --main: #333;
+    --emphasize: rgb(196, 157, 3);
+    --background: rgb(255, 205, 6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f4f4f9;
+    color: var(--main);
+    text-align: left;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container {
+    max-width: 800px;
+    flex-basis: 800px;
+    flex-grow: 1;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    color: #565656;
+    font-family: monospace;
+}
+
+.picture-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.big-heading {
+    padding-top: 70px;
+}
+
+.big-heading h1 {
+    font-size: 2rem;
+    color: var(--emphasize);
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--main);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.half {
+    flex: 2; 
+}
+
+img.half {
+    flex-basis: 80%;
+    max-width: 100%;
+    object-fit: cover; 
+    flex: 5;
+}
+
+div.half {
+    padding: 10px;
+    min-width: 30%;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--main);
+    color: rgb(2, 120, 81);
+}
+
+a:hover {
+    text-decoration: bold;
+}
+
+span {
+    cursor: pointer;
+    color: #333;
+}
+
+li.file, li.folder {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: var(--main) 1px solid;
+    width: 100%;
+}
+
+li.file:hover {
+    background-color: var(--background);
+}
+
+#fileList {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+ul.regular li {
+    padding: 10px;
+    /* color: #124f78; */
+}
+
+ul.regular {
+    list-style-type: disc;
+}
